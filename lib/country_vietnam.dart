@@ -19,7 +19,7 @@ class _CountryVietNamState extends State<CountryVietNam> {
   List<Color> listcolor = [
     // Colors.black54,
     Colors.blueAccent,
-    Colors.green,
+    // Colors.green,
     Colors.red,
   ];
 
@@ -27,9 +27,9 @@ class _CountryVietNamState extends State<CountryVietNam> {
   Widget build(BuildContext context) {
     DateTime dateTime = DateTime.now();
 
-    Map<String, double> data = {
+    var data = {
       "Đang Điều Trị": widget.mycountry.active.toDouble(),
-      "Đã Khỏi Bệnh": widget.mycountry.recovered.toDouble(),
+      // "Đã Khỏi Bệnh": widget.mycountry.recovered.toDouble(),
       "Số Người Chết": widget.mycountry.deaths.toDouble()
     };
     int key = 0;

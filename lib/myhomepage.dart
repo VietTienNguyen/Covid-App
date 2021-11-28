@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return  FutureBuilder<MyCounrty>(
-          future: futurecountry,
+          future: getcountryapi(),
           builder: (context, int) {
             if (int.hasData) {
               return CountryVietNam(mycountry: int.data!);

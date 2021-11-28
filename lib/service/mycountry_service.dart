@@ -9,6 +9,7 @@ Future<MyCounrty> getcountryapi() async {
   final http.Client client = http.Client();
   final response = await client.get(Uri.parse(url));
   if (response.statusCode == 200) {
+    print('object');
     //final reponsedata = jsonDecode(response.body);
     return MyCounrty.fromJson(jsonDecode(response.body)[0]);
   }else{

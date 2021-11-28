@@ -1,11 +1,11 @@
 class MyCounrty {
   final String countryRegion;
-  final int confirmed, recovered, deaths, active;
+  final int confirmed, deaths, active;
 
   MyCounrty(
       {required this.countryRegion,
       required this.confirmed,
-      required this.recovered,
+      // required this.recovered,
       required this.deaths,
       required this.active});
 
@@ -13,7 +13,7 @@ class MyCounrty {
     return MyCounrty(
         countryRegion: country['countryRegion'] as String,
         confirmed: country['confirmed'] as int,
-        recovered: country['recovered'] as int,
+        // recovered: country['recovered'] as int,
         active: country['active'] as int,
         deaths: country['deaths'] as int,
     );
